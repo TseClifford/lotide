@@ -1,4 +1,4 @@
-const eqArrays = function (firstArray, secondArray) {
+const eqArrays = function(firstArray, secondArray) {
   let eqValue = true;
   for (let i = 0; i < firstArray.length; i++) {
     if (firstArray[i] !== secondArray[i]) {
@@ -8,7 +8,7 @@ const eqArrays = function (firstArray, secondArray) {
   return eqValue;
 };
 
-const assertArraysEqual = function (firstArray, secondArray) {
+const assertArraysEqual = function(firstArray, secondArray) {
   if (eqArrays(firstArray, secondArray) === true) {
     console.log('✅ The two arrays are identical.');
   } else {
@@ -17,7 +17,7 @@ const assertArraysEqual = function (firstArray, secondArray) {
 };
 
 
-const middle = function (array) {
+const middle = function(array) {
   let middleArray = [];
   let middleFirstIndex = 0;
   let middleSecondIndex = 0;
@@ -27,7 +27,7 @@ const middle = function (array) {
       middleFirstIndex = (array.length / 2) - 1;
       middleSecondIndex = array.length / 2;
       middleArray.push(array[middleFirstIndex], array[middleSecondIndex]);
-      return middleArray
+      return middleArray;
     }
     // Odd array
     else if (array.length % 2 === 1) {
