@@ -1,22 +1,3 @@
-const eqArrays = function(firstArray, secondArray) {
-  let eqValue = true;
-  for (let i = 0; i < firstArray.length; i++) {
-    if (firstArray[i] !== secondArray[i]) {
-      eqValue = false;
-    }
-  }
-  return eqValue;
-};
-
-const assertArraysEqual = function(firstArray, secondArray) {
-  if (eqArrays(firstArray, secondArray) === true) {
-    console.log('✅ The two arrays are identical.');
-  } else {
-    console.log('🛑 The two arrays are not identical.');
-  }
-};
-
-
 const letterPositions = function(sentence) {
   const results = {};
   let lowerCaseSentence = '';
@@ -36,7 +17,4 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-// TEST CODE
-console.log(letterPositions(("lighthouse in the house")));
-
-assertArraysEqual(letterPositions("hello").e, [1]);
+module.exports = letterPositions;

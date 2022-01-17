@@ -1,12 +1,3 @@
-// FUNCTION IMPLEMENTATION
-// const assertEqual = function(actual, expected) {
-//   if (actual === expected) {
-//     console.log(`✅✅✅ Assertion Passed: ${actual}  === ${expected}`);
-//   } else if (actual !== expected) {
-//     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-//   }
-// };
-
 const countLetters = function(str) {
   const results = {};
   let trimmedStr = '';
@@ -22,5 +13,4 @@ const countLetters = function(str) {
   return results;
 };
 
-// TEST CODE
-console.log(countLetters("lighthouse in the house"));
+module.exports = countLetters;

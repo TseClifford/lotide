@@ -23,5 +23,4 @@ describe("#tail", () => {
     const result = tail(["Hello", "Lighthouse", "Labs"]);
     assert.strictEqual(result[1], "Labs"); // original array should still have 3 elements!
   });
-
 });
