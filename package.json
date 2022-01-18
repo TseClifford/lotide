@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@tseclifford/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library.",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/TseClifford/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Clifford Tse <TseClifford@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TseClifford/lotide/issues"
