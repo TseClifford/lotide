@@ -1,12 +1,12 @@
-const flatten = function(initialArray) {
+const flatten = function(array) {
   let flatArray = [];
-  for (let i in initialArray) {
-    if (Array.isArray((initialArray[i])) === true) {
-      for (let j in initialArray[i]) {
-        flatArray.push(initialArray[i][j]);
+  for (let i in array) {
+    if (Array.isArray((array[i])) === true) {
+      for (let j in array[i]) {
+        flatArray.push(array[i][j]);
       }
     } else {
-      flatArray.push(initialArray[i]);
+      flatArray.push(array[i]);
     }
   }
   return flatArray;

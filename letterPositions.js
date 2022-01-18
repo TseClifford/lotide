@@ -1,7 +1,7 @@
-const letterPositions = function(sentence) {
+const letterPositions = function(string) {
   const results = {};
   let lowerCaseSentence = '';
-  lowerCaseSentence = sentence.toLowerCase();
+  lowerCaseSentence = string.toLowerCase();
 
   for (let i = 0; i < lowerCaseSentence.length; i++) {
     let letter = lowerCaseSentence[i];

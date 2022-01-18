@@ -1,12 +1,12 @@
-const without = function(sourceArray, itemsToRemove) {
+const without = function(array, itemsToRemove) {
   let newArray = [];
-  newArray = sourceArray;
+  newArray = array;
   
   for (let j in itemsToRemove) {
-    for (let i in sourceArray) {
+    for (let i in array) {
       // Find item index in new array and splice if match
-      if (sourceArray[i] === itemsToRemove[j]) {
-        newArray.splice(newArray.indexOf(sourceArray[i]), 1);
+      if (array[i] === itemsToRemove[j]) {
+        newArray.splice(newArray.indexOf(array[i]), 1);
       }
     }
   }
