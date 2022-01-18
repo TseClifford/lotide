@@ -1,10 +1,33 @@
 // index.js
+const countLetters = require('./countLetters');
+const countOnly = require('./countOnly');
+const eqArrays = require('./eqArrays');
+const eqObjects = require('./eqObjects');
+const findKeyByValue = require('./findKeyByValue');
+const findKey = require('./findKey');
+const flatten = require('./flatten');
 const head   = require('./head');
+const letterPositions = require('./letterPositions');
+const map = require('./map');
+const middle   = require('./middle');
 const tail   = require('./tail');
-const middle = require('./middle');
+const takeUntil = require('./takeUntil');
+const without = require('./without');
+
 
 module.exports = {
+  countLetters: countLetters,
+  countOnly: countOnly,
+  eqArrays: eqArrays,
+  eqObjects: eqObjects,
+  findKeyByValue: findKeyByValue,
+  findKey: findKey,
+  flatten: flatten,
   head:   head,
+  letterPositions: letterPositions,
+  map: map,
+  middle: middle,
   tail:   tail,
-  middle: middle
+  takeUntil: takeUntil,
+  without: without,
 };
